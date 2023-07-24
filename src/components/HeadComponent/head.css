@@ -1,3 +1,5 @@
+
+
 .head {
     display: flex;
     justify-content: space-between;
@@ -31,6 +33,7 @@
 }
 
 .about__text {
+    font-style: normal;
     font-size: 1.15rem;
     max-width: 300px;
     text-align: center;
