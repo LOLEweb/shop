@@ -41,3 +41,9 @@ ul {
   margin: 0 auto;
   padding: 2rem 20px 0;
 }
+
+.general-bg {
+  background-color: #232323;
+  padding: 1rem;
+  border-radius: 50px;
+}
