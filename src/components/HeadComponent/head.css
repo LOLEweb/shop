@@ -64,6 +64,10 @@
     color: white;
 }
 
+.list li {
+    text-align: center;
+}
+
 .link {
     color: #fff;
     text-decoration: none;

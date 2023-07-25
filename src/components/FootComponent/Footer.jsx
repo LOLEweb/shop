@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <div>
-
+123123
         </div>
     );
 };
