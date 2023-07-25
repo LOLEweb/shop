@@ -21,6 +21,7 @@
 
 /*TITLES ITEM FOOTER!!*/
 .weather__title {
+    z-index: 1;
     background: linear-gradient(91deg, #a3d4f7 6.22%, #0caade 94.29%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
