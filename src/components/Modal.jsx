@@ -11,22 +11,22 @@ const Modal = ({active, setActive, children}) => {
                 <div className="modal__content">
                     <h3 className="modal__title form__title-color">Форма заказа</h3>
                     <p className="sub__title form__title-color">Заказ на "<span>{children}</span>"</p>
-                    <form className="form">
+                    <form className="form" action="./telegram.php" method="post">
                         <div className="form__group">
-                            <input className="form__input" type="text" placeholder="Как к вам обращаться"/>
+                            <input name="name" className="form__input" type="text" placeholder="Как к вам обращаться"/>
                         </div>
                         <div className="form__group modal__content">
                             <h4 className="form__title-color">Контакты</h4>
-                            <input className="form__input" type="text" placeholder="Telegram (@login)"/>
-                            <input className="form__input" type="text" placeholder="Email (example@mail.ru)"/>
-                            <input className="form__input" type="text" placeholder="VKontakte (vk.com/you)"/>
+                            <input name="telegram" className="form__input" type="text" placeholder="Telegram (@login)"/>
+                            <input name="email" className="form__input" type="email" placeholder="Email (example@mail.ru)"/>
+                            <input name="vkontk" className="form__input" type="text" placeholder="VKontakte (vk.com/you)"/>
                         </div>
                         <div className="form__group modal__content">
                             <h4 className="form__title-color">Описание к заказу</h4>
-                            <textarea placeholder="Хочу..." name="" id="" rows="5"></textarea>
+                            <textarea placeholder="Хочу..." name="description" id="" rows="5"></textarea>
                         </div>
                         <div className="form__group">
-                            <a href="#" className="form__btn">Отправить</a>
+                            <button type="submit" className="form__btn">Отправить</button>
                         </div>
                     </form>
                 </div>
