@@ -1,0 +1,39 @@
+.quote__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 30px;
+}
+
+.quote__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quote__item {
+    font-size: 1.25rem;
+    background: linear-gradient(91deg, #00d0ff 6.22%, #00d1ff 94.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: screen;
+    font-weight: 600;
+}
+
+.quote__item span {
+    margin-right: 5px;
+    background: linear-gradient(91deg, #0482ff 6.22%, #442cd2 94.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: screen;
+    font-weight: 600;
+}
+
+.quote__btn {
+    cursor: pointer;
+}
+
+.quote__p {
+    text-align: center;
+    font-size: 0.75rem;
+}
