@@ -1,0 +1,46 @@
+.favorite__section {
+    background-color: #232323;
+    border-radius: 50px;
+}
+
+.favorite__top_nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+}
+
+
+.favorite__block {
+    height: 0;
+    overflow-y: hidden;
+    padding: 0 2.5rem;
+    white-space: nowrap;
+    transition: all .4s ease-in-out;
+}
+
+.favorite__btn {
+    position: absolute;
+    margin-top: 4px;
+    right: 1.75rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 6px 5px 5px 5px;
+    transition: all .4s ease-in-out;
+}
+
+.favorite__btn:hover {
+    background-color: #303030;
+}
+
+.favorite__block.favorite__show {
+    height: 200px;
+    overflow-y: visible;
+}
+
+.favorite__block.favorite__close {
+    height: 0;
+}
+

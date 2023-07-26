@@ -1,6 +1,7 @@
 import Head from "./components/HeadComponent/Head";
 import Main from "./components/MainComponent/Main";
 import Footer from "./components/FootComponent/Footer";
+import About from "./components/AboutComponent/About";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           <div className="panel">
             <Head />
             <Main />
+              {/*<About />*/}
               <Footer />
           </div>
       </div>

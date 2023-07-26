@@ -34,6 +34,7 @@
     flex-direction: column;
     gap: 1.5rem;
     background-color: #303030;
+    transition: .15s all ease-in-out;
 }
 
 .card__setting:hover {
@@ -181,6 +182,9 @@ textarea:focus {
     align-items: center;
     background-color: #353535;
     border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
     padding: 15px 0;
     transition: .1s ease-in-out;
 }
