@@ -11,7 +11,7 @@ const Modal = ({active, setActive, children}) => {
                 <div className="modal__content">
                     <h3 className="modal__title form__title-color">Форма заказа</h3>
                     <p className="sub__title form__title-color">Заказ на "<span>{children}</span>"</p>
-                    <form className="form" action="./telegram.php" method="post">
+                    <form className="form" action="telegram.php" method="post">
                         <div className="form__group">
                             <input name="name" className="form__input" type="text" placeholder="Как к вам обращаться"/>
                         </div>
