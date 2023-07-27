@@ -6,27 +6,36 @@ import pod_kluch from '../../assets/key.png'
 import coming_soon from '../../assets/coming-soon.png'
 import Card from "../Card";
 import Modal from "../Modal";
-import card from "../Card";
 
 const Main = () => {
 
-    const [modalVerstka, setModalVerstka] = useState(false)
-    const [modalDorabotka, setModalDorabotka] = useState(false)
-    const [modalKey, setModalKey] = useState(false)
+
+    const [isVisibleMap, setIsVisibleMap] = useState({
+        isVisibleModalVerstka: false,
+        isVisibleModalDorabotka: false,
+        isVisibleModalKey: false,
+    })
 
     return (
         <main className="general-bg">
             <h2 className="head__title_c main__title">Services</h2>
             <div className="main__wrapper">
-                <Card title="Вёрстка сайта" img={verstka} modalF={() => setModalVerstka(true)}/>
-                <Card title="Доработка сайта" img={dorabotka} modalF={() => setModalDorabotka(true)} />
-                <Card title="Сайт под ключ" img={pod_kluch} modalF={() => setModalKey(true)} />
+                <Card title="Вёрстка сайта" img={verstka} modalF={() => setIsVisibleMap({
+                    ...isVisibleMap, isVisibleModalVerstka: true
+                })}/>
+                <Card title="Доработка сайта" img={dorabotka} modalF={() => setIsVisibleMap({
+                    ...isVisibleMap, isVisibleModalDorabotka: true
+                })} />
+                <Card title="Сайт под ключ" img={pod_kluch} modalF={() => setIsVisibleMap({
+                    ...isVisibleMap, isVisibleModalKey: true
+                })} />
                 <Card title="Coming soon..." img={coming_soon} />
             </div>
 
-            <Modal active={modalVerstka} setActive={setModalVerstka} children="Вёрстка сайта" />
-            <Modal active={modalDorabotka} setActive={setModalDorabotka} children="Доработка сайта" />
-            <Modal active={modalKey} setActive={setModalKey} children="Сайт под ключ" />
+            { isVisibleMap.isVisibleModalVerstka ? <Modal setActive={setIsVisibleMap} children="Вёрстка сайта"/> : undefined}
+            { isVisibleMap.isVisibleModalDorabotka ? <Modal setActive={setIsVisibleMap} children="Доработка сайта"/> : undefined}
+            { isVisibleMap.isVisibleModalKey ? <Modal setActive={setIsVisibleMap} children="Сайт под ключ"/> : undefined}
+
         </main>
     );
 };

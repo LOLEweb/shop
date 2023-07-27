@@ -1,3 +1,7 @@
+.footer__bg {
+    border-radius: 50px 50px 0 0;
+}
+
 .footer__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -6,11 +10,17 @@
 }
 
 .footer__item {
+    background: #353535;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.item__btn {
+    box-shadow: 0 -15px 15px #232323;
 }
 
 .footer__img {

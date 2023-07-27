@@ -72,16 +72,6 @@
     text-align: center;
 }
 
-.overlay.animated {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.overlay.show {
-    opacity: 1;
-    visibility: visible;
-}
-
 .modal__close {
     position: absolute;
     right: 10px;

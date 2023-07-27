@@ -8,7 +8,7 @@ import FooterCard from "../FooterCard";
 
 const Footer = () => {
     return (
-        <div className="general-bg">
+        <div className="general-bg footer__bg">
             <h2 className="main__title head__title_c">My works</h2>
             <div className="footer__wrapper">
                 <FooterCard title="Weather App" titleClass="weather__title" img={weatherApp} href="https://sxd-weather.netlify.app"/>

@@ -1,11 +1,14 @@
 import React from 'react';
 import {BiCookie} from "react-icons/bi";
 
-const Modal = ({active, setActive, children}) => {
+const Modal = ({setActive, children}) => {
     return (
-        <div className={`overlay animated ${active ? 'show' : ''}`}>
+        <div className="overlay">
             <div className="modal">
-                <div onClick={() => setActive(false)} className="modal__close">
+                <div onClick={() => setActive(
+                    {
+                     isVisibleModalVerstka: false, modalDorabotka: false, modalKey: false,
+                })} className="modal__close">
                     <BiCookie size={30} color="#fff"/>
                 </div>
                 <div className="modal__content">
