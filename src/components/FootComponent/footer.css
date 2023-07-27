@@ -21,6 +21,7 @@
 
 .item__btn {
     box-shadow: 0 -15px 15px #232323;
+    transition: all .3s ease-in-out;
 }
 
 .footer__img {
