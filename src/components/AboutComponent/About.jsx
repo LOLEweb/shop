@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './about.css'
 import {BiPlus, BiMinus} from "react-icons/bi";
-import verstka from "../../assets/monitor.png";
 import Card from "../Card";
 
 const About = () => {

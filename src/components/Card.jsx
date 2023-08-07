@@ -1,5 +1,4 @@
 import React from 'react';
-import coding from "../assets/monitor.png";
 
 const Card = ({title, img, modalF}) => {
     return (

@@ -1,12 +1,12 @@
 import React from 'react';
 import './head.css'
-
+import avatar from '../../assets/avatar.jpg'
 const Head = () => {
     return (
         <div className="head">
             <div className="head__block block">
                 <a target="_blank" href="https://github.com/LOLEweb">
-                    <img className="head__avatar" src="https://avatars.githubusercontent.com/u/125983594?v=4" alt="avatar"/>
+                    <img className="head__avatar" src={avatar} alt="avatar"/>
                 </a>
                 <h2 className="head__title head__title_c">diziSXD</h2>
                 <p className="head__role">Frontend Developer</p>
