@@ -13,6 +13,7 @@ const Quote = () => {
                     <QuoteComponent quote="Coding like poetry should be short and concise."  quotetransl="Код, как и поэзия, должно быть коротким и лаконичным." />
                     <QuoteComponent quote="Clean code always looks like it was written by someone who cares." quotetransl="Чистый код всегда выглядит так, как будто его написал кто-то, кому не все равно." />
                     <QuoteComponent quote="We can only learn to love by loving." quotetransl="Мы можем научиться любить, только любя." />
+                    <QuoteComponent quote="Live in the present but remember the past" quotetransl="Живи настоящим, но помни прошлое." />
                 </ul>
             </div>
         </div>
